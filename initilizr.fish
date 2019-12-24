@@ -1,11 +1,11 @@
 #!/usr/bin/env fish
 
 set -g GROUP_ID io.pivotal.shinyay
-set -g ARTIFACT_ID spring-initializr
+set -g ARTIFACT_ID spring-live-coding
 set -g NAME $ARTIFACT_ID
 set -g DESCRIPTION "Sample project for Spring Boot"
 set -g PACKAGE $GROUP_ID
-set -g DEPENDENCY web,actuator,thymeleaf
+set -g DEPENDENCY web,actuator
 
 curl https://start.spring.io/starter.zip --create-dirs -o ./spring/spring.zip \
 	-d type=gradle-project \
