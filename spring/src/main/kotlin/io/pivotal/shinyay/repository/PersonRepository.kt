@@ -25,4 +25,6 @@ class PersonRepository {
         }
         return person
     }
+
+    fun removeById(id: Int): Boolean = persons.removeIf{ it.id == id }
 }
