@@ -11,4 +11,10 @@ class PersonRepository {
     fun findAll() = persons
 
     fun findById(id: Int) = persons.singleOrNull{ it.id == id }
+
+    fun save(person: Person): Person {
+        person.id = (persons.maxBy { it.id }?.id ?: 0) + 1
+        persons.add(person)
+        return person
+    }
 }
