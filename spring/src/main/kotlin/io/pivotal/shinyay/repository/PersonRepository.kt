@@ -17,4 +17,12 @@ class PersonRepository {
         persons.add(person)
         return person
     }
+
+    fun update(person: Person): Person {
+        val index = persons.indexOfFirst { it.id == person.id }
+        if(index >= 0) {
+            persons[index] = person
+        }
+        return person
+    }
 }
