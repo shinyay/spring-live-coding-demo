@@ -19,4 +19,7 @@ class PersonController(val repository: PersonRepository) {
 
     @PutMapping
     fun update(@RequestBody person: Person) = repository.update(person)
+
+    @DeleteMapping("/{id}")
+    fun remove(@PathVariable id: Int) = repository.removeById(id)
 }
