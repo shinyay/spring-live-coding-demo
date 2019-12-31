@@ -16,4 +16,7 @@ class PersonController(val repository: PersonRepository) {
 
     @PostMapping
     fun add(@RequestBody person: Person) = repository.save(person)
+
+    @PutMapping
+    fun update(@RequestBody person: Person) = repository.update(person)
 }
