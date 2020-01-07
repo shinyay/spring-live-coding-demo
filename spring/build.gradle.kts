@@ -22,6 +22,7 @@ dependencies {
 		exclude(group = "org.springframework.boot", module = "spring-boot-starter-tomcat")
 	}
 	implementation("org.springframework.boot:spring-boot-starter-jetty")
+//	implementation("org.springframework.boot:spring-boot-starter-undertow")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("io.springfox:springfox-swagger2:2.9.2")
 	implementation("io.springfox:springfox-swagger-ui:2.9.2")
