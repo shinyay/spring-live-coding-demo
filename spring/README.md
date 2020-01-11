@@ -6,6 +6,12 @@ Overview
 
 ## Demo
 
+### 1. Spring Initilizr to create project template
+
+```
+$ curl https://start.spring.io/starter.zip -d type=gradle-project -d dependencies=web,actuator -o spring.zip
+```
+
 ## Features
 
 - feature:1
