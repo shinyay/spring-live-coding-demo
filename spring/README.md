@@ -12,6 +12,10 @@ Overview
 $ curl https://start.spring.io/starter.zip -d type=gradle-project -d dependencies=web,actuator -o spring.zip
 ```
 
+### 2. Entity
+#### 2.1. Data Class
+#### 2.2. Enum
+
 ## Features
 
 - feature:1
