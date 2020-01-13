@@ -16,6 +16,12 @@ $ curl https://start.spring.io/starter.zip -d type=gradle-project -d dependencie
 #### 2.1. Data Class
 #### 2.2. Enum
 
+### 3. Repository
+- Find
+- Save
+- Update
+- Remove
+
 ## Features
 
 - feature:1
