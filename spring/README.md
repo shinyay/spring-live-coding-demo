@@ -22,6 +22,14 @@ $ curl https://start.spring.io/starter.zip -d type=gradle-project -d dependencie
 - Update
 - Remove
 
+### 4. Controller
+- RestController
+- RequestMapping
+- GetMapping
+- PostMapping
+- PutMapping
+- DeleteMapping
+
 ## Features
 
 - feature:1
