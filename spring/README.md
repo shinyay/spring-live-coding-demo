@@ -30,6 +30,28 @@ $ curl https://start.spring.io/starter.zip -d type=gradle-project -d dependencie
 - PutMapping
 - DeleteMapping
 
+### 5. Actuator
+- Actuator Enabled
+```
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+```
+
+- Build Information
+```
+springBoot {
+	buildInfo()
+}
+```
+
+- Git Information
+```
+com.gorylenko.gradle-git-properties
+```
+
 ## Features
 
 - feature:1
