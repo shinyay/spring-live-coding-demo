@@ -52,6 +52,21 @@ springBoot {
 com.gorylenko.gradle-git-properties
 ```
 
+### 6. API Document by Swagger
+
+```
+dependencies {
+	implementation("io.springfox:springfox-swagger2:2.9.2")
+	implementation("io.springfox:springfox-swagger-ui:2.9.2")
+}
+```
+
+- UiConfiguration
+- ApiInfo
+- Docket
+
+[swagger-ui](http://localhost:8080/swagger-ui.html)
+
 ## Features
 
 - feature:1
