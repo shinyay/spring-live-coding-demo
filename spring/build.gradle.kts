@@ -6,6 +6,8 @@ plugins {
 	id("com.gorylenko.gradle-git-properties") version "2.0.0"
 	kotlin("jvm") version "1.3.61"
 	kotlin("plugin.spring") version "1.3.61"
+	kotlin("plugin.jpa") version "1.3.61"
+	kotlin("plugin.noarg") version "1.3.61"
 }
 
 group = "io.pivotal.shinyay"
