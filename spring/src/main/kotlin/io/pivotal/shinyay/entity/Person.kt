@@ -1,4 +1,13 @@
 package io.pivotal.shinyay.entity
 
-data class Person(var id: Int, var name: String, var age: Int, var gender: Gender) {
+import javax.persistence.Column
+import javax.persistence.Entity
+import javax.persistence.GeneratedValue
+import javax.persistence.Id
+
+@Entity
+data class Person(@Id @GeneratedValue var id: Int,
+                  @Column(nullable = false, unique = true) var name: String,
+                  @Column(nullable = false) var age: Int,
+                  @Column(nullable = false) var gender: Gender) {
 }
