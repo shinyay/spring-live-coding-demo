@@ -78,6 +78,8 @@ dependencies {
 ```
 
 #### 7.2. Kotlin Plugin
+Without the following plugins Default constructor which does not has argument is needed.
+
 ```
 plugins {
 	kotlin("plugin.jpa") version "1.3.61"
