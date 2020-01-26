@@ -67,6 +67,24 @@ dependencies {
 
 [swagger-ui](http://localhost:8080/swagger-ui.html)
 
+### 7. Data Persistence
+
+#### 7.1. Dependency
+```
+dependencies {
+	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+	implementation("com.h2database:h2")
+}
+```
+
+#### 7.2. Kotlin Plugin
+```
+plugins {
+	kotlin("plugin.jpa") version "1.3.61"
+	kotlin("plugin.noarg") version "1.3.61"
+}
+```
+
 ## Features
 
 - feature:1
