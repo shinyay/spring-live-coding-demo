@@ -87,6 +87,8 @@ plugins {
 }
 ```
 
+#### 7.3. CrudRepository Interface
+
 ## Features
 
 - feature:1
