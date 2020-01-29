@@ -18,5 +18,5 @@ class PersonDBController(val repository: PersonRepositoryDBInterface) {
     fun findByName(@PathVariable name: String) = repository.findByName(name)
 
     @GetMapping("/person/(id}")
-    fun findById(@PathVariable id: Int) = repository.findById(id)
+    fun findOne(@PathVariable id: Int) = repository.findById(id)
 }
