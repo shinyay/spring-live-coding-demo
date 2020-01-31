@@ -32,10 +32,10 @@ class PersonRepository {
 
     @PostConstruct
     fun demoData() {
-        save(Person(1, "Rei Ayanami", 14, Gender.FEMALE))
-        save(Person(2, "Shinji Ikari", 14, Gender.MALE))
-        save(Person(3, "Soryu Asuka Langley", 14, Gender.FEMALE))
-        save(Person(4, "Torji Suzuhara", 14, Gender.MALE))
-        save(Person(5, "Kaoru Nagisa", 14, Gender.MALE))
+        save(Person(1, "Rei", "Ayanami", 14, Gender.FEMALE))
+        save(Person(2, "Shinji", "Ikari", 14, Gender.MALE))
+        save(Person(3, "Asuka Langley", "Soryu", 14, Gender.FEMALE))
+        save(Person(4, "Torji", "Suzuhara", 14, Gender.MALE))
+        save(Person(5, "Kaoru", "Nagisa", 14, Gender.MALE))
     }
 }
