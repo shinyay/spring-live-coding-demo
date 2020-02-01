@@ -26,6 +26,7 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-jetty")
 //	implementation("org.springframework.boot:spring-boot-starter-undertow")
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+	implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
 	implementation("com.h2database:h2")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("io.springfox:springfox-swagger2:2.9.2")
