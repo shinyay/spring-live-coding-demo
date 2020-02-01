@@ -88,6 +88,7 @@ plugins {
 ```
 
 #### 7.3. CrudRepository Interface
+- Inherit `CrudRepository<>` interface
 
 ## Features
 
