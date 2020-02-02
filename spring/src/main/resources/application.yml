@@ -10,6 +10,12 @@ spring:
     console:
       enabled: true
       path: /h2-console
+  thymeleaf:
+    cache: false
+    enabled: true
+    prefix: classpath:/templates
+    suffix: .html
+    encoding: UTF-8
 management:
   endpoints:
     web:
