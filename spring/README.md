@@ -90,6 +90,25 @@ plugins {
 #### 7.3. CrudRepository Interface
 - Inherit `CrudRepository<>` interface
 
+### 8. Thymeleaf
+#### 8.1. Dependency
+```
+dependencies {
+	implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
+}
+```
+
+#### 8.2. Application Properties
+```yaml
+spring:
+  thymeleaf:
+    cache: false
+    enabled: true
+    prefix: classpath:/templates
+    suffix: .html
+    encoding: UTF-8
+```
+
 ## Features
 
 - feature:1
