@@ -109,6 +109,9 @@ spring:
     encoding: UTF-8
 ```
 
+- `prefix` : Directory name under resources where Thymeleaf templates are located
+- `suffix` : File extention for Thymeleaf template
+
 ## Features
 
 - feature:1
