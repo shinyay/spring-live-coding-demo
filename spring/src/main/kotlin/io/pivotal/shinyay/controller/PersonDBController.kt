@@ -24,7 +24,8 @@ class PersonDBController(val repository: PersonRepositoryDBInterface) {
     @ResponseStatus(HttpStatus.CREATED)
     fun add(@RequestBody person: Person) = repository.save(person)
 
-//    private fun create(person: Person) = repository.save(person)
+    @DeleteMapping("/{id}")
+    fun delete(@PathVariable id: Int) = repository.deleteById(id)
 
     @PostConstruct
     fun demoData() {
