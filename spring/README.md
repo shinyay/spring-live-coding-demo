@@ -104,7 +104,7 @@ spring:
   thymeleaf:
     cache: false
     enabled: true
-    prefix: classpath:/templates
+    prefix: classpath:/templates/
     suffix: .html
     encoding: UTF-8
 ```
