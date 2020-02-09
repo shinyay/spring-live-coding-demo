@@ -112,6 +112,12 @@ spring:
 - `prefix` : Directory name under resources where Thymeleaf templates are located
 - `suffix` : File extention for Thymeleaf template
 
+### 9. Security
+#### 9.1. Dependency
+```
+
+```
+
 ## Features
 
 - feature:1
