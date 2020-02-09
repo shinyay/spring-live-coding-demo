@@ -120,6 +120,13 @@ dependencies {
 }
 ```
 
+#### 9.2. Security Configuration Class
+```kotlin
+@Configuration
+@EnableWebSecurity
+class SecurityConfig : WebSecurityConfigurerAdapter()
+```
+
 ## Features
 
 - feature:1
