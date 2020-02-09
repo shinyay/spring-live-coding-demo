@@ -115,7 +115,9 @@ spring:
 ### 9. Security
 #### 9.1. Dependency
 ```
-
+dependencies {
+	implementation("org.springframework.boot:spring-boot-starter-security")
+}
 ```
 
 ## Features
