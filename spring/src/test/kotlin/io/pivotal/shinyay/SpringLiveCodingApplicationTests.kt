@@ -6,6 +6,8 @@ import org.springframework.boot.test.context.SpringBootTest
 @SpringBootTest
 class SpringLiveCodingApplicationTests {
 
+	val ENDPOINT = "http://localhost:8080//db/person"
+
 	@Test
 	fun contextLoads() {
 	}
