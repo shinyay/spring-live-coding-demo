@@ -38,6 +38,8 @@ dependencies {
 		exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
 	}
 	testImplementation("io.rest-assured:rest-assured:4.2.0")
+	testImplementation("io.rest-assured:json-path:4.2.0")
+	testImplementation("io.rest-assured:xml-path:4.2.0")
 }
 
 tasks.withType<Test> {
