@@ -134,6 +134,8 @@ class SecurityConfig : WebSecurityConfigurerAdapter()
 ```
 dependencies {
 	testImplementation("io.rest-assured:rest-assured:4.2.0")
+	testImplementation("io.rest-assured:json-path:4.2.0")
+	testImplementation("io.rest-assured:xml-path:4.2.0")
 }
 ```
 
