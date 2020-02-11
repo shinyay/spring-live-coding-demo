@@ -127,6 +127,16 @@ dependencies {
 class SecurityConfig : WebSecurityConfigurerAdapter()
 ```
 
+### 10. Test
+#### REST assured
+- [REST-assured](http://rest-assured.io)
+
+```
+dependencies {
+	testImplementation("io.rest-assured:rest-assured:4.2.0")
+}
+```
+
 ## Features
 
 - feature:1
