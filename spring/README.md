@@ -41,7 +41,7 @@ management:
 ```
 
 - Build Information
-```
+```gradle
 springBoot {
 	buildInfo()
 }
@@ -54,7 +54,7 @@ com.gorylenko.gradle-git-properties
 
 ### 6. API Document by Swagger
 
-```
+```gradle
 dependencies {
 	implementation("io.springfox:springfox-swagger2:2.9.2")
 	implementation("io.springfox:springfox-swagger-ui:2.9.2")
@@ -70,7 +70,7 @@ dependencies {
 ### 7. Data Persistence
 
 #### 7.1. Dependency
-```
+```gradle
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("com.h2database:h2")
@@ -80,7 +80,7 @@ dependencies {
 #### 7.2. Kotlin Plugin
 Without the following plugins Default constructor which does not has argument is needed.
 
-```
+```gradle
 plugins {
 	kotlin("plugin.jpa") version "1.3.61"
 	kotlin("plugin.noarg") version "1.3.61"
@@ -92,7 +92,7 @@ plugins {
 
 ### 8. Thymeleaf
 #### 8.1. Dependency
-```
+```gradle
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
 }
@@ -114,7 +114,7 @@ spring:
 
 ### 9. Security
 #### 9.1. Dependency
-```
+```gradle
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-security")
 }
@@ -131,13 +131,29 @@ class SecurityConfig : WebSecurityConfigurerAdapter()
 #### REST assured
 - [REST-assured](http://rest-assured.io)
 
-```
+```gradle
 dependencies {
 	testImplementation("io.rest-assured:rest-assured:4.2.0")
 	testImplementation("io.rest-assured:json-path:4.2.0")
 	testImplementation("io.rest-assured:xml-path:4.2.0")
 }
 ```
+
+#### Test code
+- 
+```kotlin
+RestAssured.get(ENDPOINT).then()
+				.assertThat()
+				.statusCode(HttpStatus.OK.value())
+```
+
+```kotlin
+RestAssured.get(ENDPOINT).then()
+				.assertThat()
+				.statusCode(HttpStatus.OK.value())
+				.body("firstname", equalTo("Rei"))
+```
+
 
 ## Features
 
