@@ -154,6 +154,21 @@ RestAssured.get(ENDPOINT).then()
 				.body("firstname", equalTo("Rei"))
 ```
 
+#### Google Truth to assertThat
+
+```gradle
+dependencies {
+	testImplementation("com.google.truth:truth:1.0.1")
+}
+```
+
+```kotlin
+val response: Response = RestAssured.given()
+				.contentType(MediaType.APPLICATION_JSON_VALUE)
+				.body(person)
+				.post(uri)
+		assertThat(response.statusCode).isEqualTo(HttpStatus.CREATED.value())
+```
 
 ## Features
 
