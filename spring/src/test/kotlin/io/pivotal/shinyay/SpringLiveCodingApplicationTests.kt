@@ -35,6 +35,8 @@ class SpringLiveCodingApplicationTests(@LocalServerPort val port: Int) {
 				.body("firstname", equalTo("Rei"))
 	}
 
+//	POST
+
 	@Test
 	fun whenCreatePerson_thenCreated() {
 		val person = createPerson()
@@ -52,4 +54,12 @@ class SpringLiveCodingApplicationTests(@LocalServerPort val port: Int) {
 			RandomStringUtils.randomAlphabetic(5),
 			RandomUtils.nextInt(10, 100),
 			Gender.FEMALE)
+
+	private fun createPersonAsUri(person: Person): String {
+		val response = RestAssured.given()
+				.contentType(MediaType.APPLICATION_JSON_VALUE)
+				.body(person)
+				.post(uri)
+		return "$uri/${response.jsonPath().get<Person>("id")}"
+	}
 }
