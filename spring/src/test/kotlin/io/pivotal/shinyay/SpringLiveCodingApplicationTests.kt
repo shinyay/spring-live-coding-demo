@@ -40,12 +40,27 @@ class SpringLiveCodingApplicationTests(@LocalServerPort val port: Int) {
 	@Test
 	fun whenCreatePerson_thenCreated() {
 		val person = createPerson()
-		println(person)
 		val response: Response = RestAssured.given()
 				.contentType(MediaType.APPLICATION_JSON_VALUE)
 				.body(person)
 				.post(uri)
 		assertThat(response.statusCode).isEqualTo(HttpStatus.CREATED.value())
+	}
+
+//	DELETE
+
+	@Test
+	fun whenDeleteCreatedPerson_thenOk() {
+		val person = createPerson()
+		val endpoint = createPersonAsUri(person)
+
+		RestAssured.delete(endpoint)
+				.then()
+				.assertThat()
+				.statusCode(HttpStatus.OK.value())
+		get(endpoint).then()
+				.assertThat()
+				.statusCode(HttpStatus.OK.value())
 	}
 
 	private fun createPerson(): Person = Person(
@@ -60,6 +75,7 @@ class SpringLiveCodingApplicationTests(@LocalServerPort val port: Int) {
 				.contentType(MediaType.APPLICATION_JSON_VALUE)
 				.body(person)
 				.post(uri)
-		return "$uri/${response.jsonPath().get<Person>("id")}"
+		println(response.jsonPath().prettyPrint())
+		return "$uri/${response.jsonPath().get<Int>("id")}"
 	}
 }
