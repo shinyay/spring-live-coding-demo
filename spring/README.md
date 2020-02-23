@@ -140,7 +140,7 @@ dependencies {
 ```
 
 #### Test code
-- 
+- GET
 ```kotlin
 RestAssured.get(ENDPOINT).then()
 				.assertThat()
