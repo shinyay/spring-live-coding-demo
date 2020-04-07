@@ -41,7 +41,7 @@ $ curl https://start.spring.io/starter.zip -o <OUTPUT_PATH>/<OUTPUT_FILE>.zip -d
 | applicationName | application name                         | DemoApplication              |
 | artifactId      | project coordinates (infer archive name) | demo                         |
 | baseDir         | base directory to create in the archive  | no base dir                  |
-| bootVersion     | spring boot version                      | 2.2.0.RELEASE                |
+| bootVersion     | spring boot version                      | 2.2.6.RELEASE                |
 | dependencies    | dependency identifiers (comma-separated) | none                         |
 | description     | project description                      | Demo project for Spring Boot |
 | groupId         | project coordinates                      | com.example                  |
